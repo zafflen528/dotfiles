@@ -1,5 +1,10 @@
 # My dotfiles
 
-My personal dotfiles for some programs, currently it only contains my vimrc but
-I will add some more personal configs in the near future when I spend more time
-configuring them to my liking.
+My personal dotfiles. Consits of:
+
+- [Manjaro i3](https://manjaro.org/downloads/community/i3/) dotfiles
+- Personal vimrc
+- Some of [Luke Smith's dotfiles]() that are both edited and copy-pasted.
+
+# Wishlist
+[] Have a DWM config
