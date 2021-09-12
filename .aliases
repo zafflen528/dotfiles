@@ -1,0 +1,60 @@
+# Vim Stuff 
+alias vi='nvim'
+alias v='vi'
+alias nvrc='v ~/.config/nvim/init.vim'
+
+# Shortcuts to dirs
+alias schcode="cd $HOME/Programming/schoolwork/school && ls"
+alias lessonsdir="cd $HOME/school/academia/smt2/lessons"
+
+# Comp Programming
+alias hrnk="cd /home/abyan/Programming/hackerrank/tmp && nvim /home/abyan/Programming/hackerrank/tmp/Solution.java"
+alias cpcpp="cd /home/abyan/Programming/compe_cpp/playground/ && nvim /home/abyan/Programming/compe_cpp/solution/A.cpp"
+
+#youtube-dl
+alias dlaudio="youtube-dl -xc -f bestaudio $1"
+alias youtube-dl="youtube-dl -c $1"
+
+# Shortening
+alias pac="sudo pacman"
+alias so="source ~/.bashrc"
+
+# Newsboat stuff
+alias nburls="v ~/.newsboat/urls"
+
+#MPV
+alias tvb='mpv --ytdl-format=22 $1'
+alias tvm='mpv --ytdl-format=18 $1' 
+alias audiompv="mpv --no-video $1"
+
+# Virtualbox
+alias virtualbox="virtualbox -style kvantum &"
+
+
+function fcd(){
+    cd $(fd -t d | fzf)
+}
+
+function open(){
+    xdg-open $(fd -t f | fzf)
+}
+
+function clipfile(){
+    realpath $(fd -t f| fzf) | xsel -ib
+    echo "File yanked!"
+}
+
+function clipdir(){
+    realpath $(fd -t d | fzf) | xsel -ib
+    echo "Dir yanked!"
+}
+
+function fm(){
+    pcmanfm . &
+}
+
+# useful for quickly downloading a raw file from a given argument
+
+function qdl(){
+    curl -LO $1
+}
