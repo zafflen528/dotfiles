@@ -7,4 +7,4 @@ My personal dotfiles. Consits of:
 - Some of [Luke Smith's dotfiles]() that are both edited and copy-pasted.
 
 # Wishlist
-- [  ] Have a DWM config
+- Have a DWM config
